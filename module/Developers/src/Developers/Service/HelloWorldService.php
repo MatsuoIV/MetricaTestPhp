@@ -24,8 +24,6 @@ class HelloWorldService {
             $salary = floatval($salary);
             if ($minSalary <= $salary && $salary <= $maxSalary) {
                 $employees[] = $employee;
-            } else {
-                $filtered = $decodedContent;
             }
         }
 

@@ -8,10 +8,6 @@
 
 class serviceAPI
 {
-//    public function md5Value($value) {
-//        return md5($value);
-//    }
-
     protected $jsonContent = null;
 
     public function __construct()
