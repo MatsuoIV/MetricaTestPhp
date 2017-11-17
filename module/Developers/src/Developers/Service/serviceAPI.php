@@ -1,8 +1,16 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Pedro
+ * Date: 17/11/2017
+ * Time: 12:37
+ */
 
-namespace Developers\Service;
-
-class HelloWorldService {
+class serviceAPI
+{
+//    public function md5Value($value) {
+//        return md5($value);
+//    }
 
     protected $jsonContent = null;
 
@@ -30,10 +38,5 @@ class HelloWorldService {
         }
 
         return $employees;
-    }
-
-    public function helloWorld()
-    {
-        return "hello";
     }
 }

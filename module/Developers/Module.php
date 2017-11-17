@@ -12,7 +12,7 @@ class Module
     {
         return array(
             'invokables' => array(
-                'HelloWorldService' => 'Developers\Service\HelloWorldService'
+                'HelloWorld' => 'Developers\Service\HelloWorldService'
             )
         );
     }

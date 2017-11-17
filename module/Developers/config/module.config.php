@@ -3,7 +3,8 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Developers\Controller\Index' => 'Developers\Controller\IndexController',
-            'Developers\Controller\Soap' => 'Developers\Controller\SoapController'
+            'Developers\Controller\Soap' => 'Developers\Controller\SoapController',
+            'Developers\Controller\Client' => 'Developers\Controller\ClientController'
         ),
     ),
 
@@ -29,10 +30,21 @@ return array(
                     'route' => '/soap',
                     'defaults' => [
                         'controller' => 'Developers\Controller\Soap',
-                        'action'     => 'soap',
+                        'action'     => 'index',
                     ]
                 ),
             ),
+            'client' => array(
+                'type' => 'literal',
+                'options' => array(
+                    'route' => '/client',
+                    'verb' => 'get',
+                    'defaults' => [
+                        'controller' => 'Developers\Controller\Client',
+                        'action'     => 'index',
+                    ]
+                ),
+            )
         ),
     ),
 
